@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.main_parent {
+    display: flex; 
+    flex-direction: row;
+}
+    .main_child_1 {
+        flex: 40%;
+    }
+        .main_child_1__text {
+            text-align: center; 
+            font-family: 'Roboto', 
+            sans-serif; 
+            font-size: 2em; 
+            font-weight: bold;
+            width: 50%;
+            text-align: justify;
+            margin-top: 0.5em;
+        }
+    .main_child_2 {
+        display: flex;
+        flex-direction: column;
+        flex: 60%;
+    }
+        .stepper_container {
+            margin-top: 1em;
+        }
+            .stepper_element {
+                display: flex; 
+                flex-direction: row;
+            }
+
+                .stepper_element__graphics {
+                    flex: 1
+                }
+                    .stepper_element__graphics__circle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid #DDDDDD;
+                        width: 40%;
+                        height: 40%;
+                        margin: 0 auto;
+                        
+                    }
+
+                    .stepper_element__graphics__trail {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                        .stepper_element__graphics__trail__line {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 10% 49% 0;
+                            height:7vh;
+                            background:
+                              repeating-linear-gradient(to bottom,black 0,black 3px,transparent 3px,transparent 5px)
+                        }
+
+                        .stepper_element__graphics__trail__arrow {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            margin-bottom: 5%;
+                        }
+
+                .stepper_element__text {
+                    flex: 7
+                }
+                    .stepper_element__text__title {
+                        font-family: 'Roboto', 
+                        sans-serif; 
+                        font-weight: 300;
+                        margin: 0 0 0.5em 0;
+                        font-size: 24px;
+                    }
+                    .stepper_element__text__subtitle {
+                        font-family: 'Roboto', 
+                        sans-serif; 
+                        font-weight: 300;
+                        color: #666666;
+                        margin-top: 0;
+                        margin-right: 30%;
+                    }
